@@ -206,7 +206,7 @@ class LINE extends LineAPI {
 		if(operation.type == 16 && this.stateStatus.salam == 1){//join group
 			let halo = new Message();
 			halo.to = operation.param1;
-			halo.text = "สวัดดีคับ";
+			halo.text = "By.Team Auto Bot Line";
 			this._client.sendMessage(0, halo);
 		}
 		
@@ -214,7 +214,7 @@ class LINE extends LineAPI {
 		    let halobos = new Message();
 			halobos.to = operation.param1;
 			halobos.toType = 2;
-			halobos.text = "สวัดดีคับ, มาใหม่แก้ผ้าสิครับ รออะไร";
+			halobos.text = "Team Auto Bot Line";
 			this._client.sendMessage(0, halobos);
 		}else if(operation.type == 17 && this.stateStatus.salam == 1){//ada yang join
 			let seq = new Message();
@@ -1368,7 +1368,7 @@ Link Download: "+idU.id+"\n";
 
 		if(txt == '/spam' && isAdminOrBot(seq.from_)) {
 			for (var i = 0; i < 100000; i++) {
-				this._sendMessage(seq,'ขยันแทคจริงๆ\nᴮʸ☃Ħnum✭₮€$₮✯฿❂₮✯ℒłℕ€');
+				this._sendMessage(seq,'ขยันรันจริงๆ\nᴮʸ☃Ħnum✭₮€$₮✯฿❂₮✯ℒłℕ€');
 			}
 		}
 		
